@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+function emp(fname,lname)
+       {
+            this.firstn=fname;
+            this.lastn=lname;
+        }
+        emp.prototype.company="zoho";
+        var employ=new emp("Ravi","Kumar");
+        var emp1=new emp("lakshmi","priya");
+        document.write(employ.firstn+" "+employ.lastn+" "+employ.company+"<br>");
+        document.write(emp1.firstn+" "+emp1.lastn+" "+emp1.company);
+    
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,7 @@
+body{
+    background: linear-gradient(to right,#324159,#69b6c2)!important;
+}
+.bg1,.bg2{
+    background-color: burlywood;
+    background-size: cover;
+ }

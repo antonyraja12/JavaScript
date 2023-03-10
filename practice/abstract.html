@@ -1,0 +1,107 @@
+<!-- class Vec {
+    constructor(VName) {
+        this.vechicleN = VName;
+        throw new error("you cannot create an instance of abstract class");
+    }
+    display() {
+        return this.vechicleN;
+    }
+}
+var Vech=new Vec(); -->
+<!-- <!Doctype html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>Random number</title>
+    </head>
+    <body>
+        <script type="text/javascript" charset="utf-8">
+            function random(){
+            var a=math.random(20,1);
+            document.write(a);
+            }
+        </script>
+    </body>
+</html>  -->
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Math</h1>
+<h2>The Math.random() Method</h2>
+<p>Math.random()*10 returns a random number between 0 and 10:</p>
+
+<p id="demo"></p>
+
+<script>
+let x = Math.random() * 10;
+document.getElementById("demo").innerHTML = x;
+</script>
+
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <title>index</title>
+        </head>
+        <body>
+            <script>
+            function rand(a,b)
+            {
+            if((a==null)&&(b==null))
+            {
+                return 0;
+                
+            }
+            if((a==null))
+            {
+              
+               a=0;
+               return 0;
+                
+            }
+            return a + Math.floor(Math.random()*((b-a)-1));
+            }
+            document.write(rand(20,1));
+
+            document.write(rand(1,10));
+
+            document.write(rand(1,6));
+
+            document.write(rand());
+            
+            </script>
+            </body>
+            </html>
+            <!Doctype html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>Random number</title>
+    </head>
+    <body>
+        <script type="text/javascript" charset="utf-8">
+            function rand(a,b){
+                if(a==null&&b==null){
+                    return 0;
+                }
+                if(a==null){
+                    a=b;
+                    b=0;
+                }
+                return a + Math.floor(Math.random()*((b-a)-1));
+            }
+             document.write(rand(20,1));
+
+            document.write(rand(1,10));
+
+            document.write(rand(1,6));
+
+            document.write(rand());
+           
+        </script>
+    </body>
+</html>
+

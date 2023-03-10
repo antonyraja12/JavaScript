@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="domelement.js">
+    function domelement(){
+        var div1=document.createElement("div");
+        var txt=document.createTextNode("Login Page");
+        var inp=document.createElement("input");
+        var but=document.createElement("button") 
+        var txt1=document.createTextNode("Click");
+        var a=  but.appendChild(txt1);
+        var b= div1.appendChild(txt);
+        var c=div1.appendChild(inp);
+        var d=div1.appendChild(but);
+        var s=document.body.appendChild(div1);
+        console.log(b);
+        
+}
+</script>
+<body onload="domelement()">
+    
+    
+</body>
+</html>

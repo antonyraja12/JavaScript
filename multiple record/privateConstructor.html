@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Student{
+            constructor(){
+                var name;
+                var mark;
+            }
+            getName(){
+                return this.name;
+            }
+            setName(name){
+             this.name=name;   
+            }
+            getMark(){
+                return this.mark;
+            }
+            setMark(mark){
+                if(mark<0||mark>100){
+                    alert("invalid marks");
+                }
+                else{
+                    this.mark=mark;
+                }
+
+            }
+        }
+        var std=new Student();
+        std.setName("Antony");
+        std.setMark(80);
+        document.write(std.getName()+" "+std.getMark());
+    </script>
+</body>
+</html>

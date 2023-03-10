@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=">
+    <title>Student Details</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Stud_mul.css"type="text/css">
+</head>
+<body id="cls">
+    <script type="text/javascript" src="Stud_mul.js">
+        
+
+    </script>
+    <div class="row container pt-5 " style="height:100%">
+    <div class="col-lg-4 " id="std">
+        <h1 class="text-center">STUDENT DETAILES</h1>
+        <form >
+            <table class="tab1 border border-dark shadow-lg p-3 mb-5  rounded-5">
+                <tr >
+                    <td><label>STUDENT NAME</label></td>
+                    <td >:<input type="text" name="name" id="name1"placeholder="Enter student Name" class="border-0 border-bottom border-dark border-3"></td>
+                </tr>
+                <tr id="tr1">
+                    <td><label>STUDENT ROLL NO</label></td>
+                    <td>:<input type="text" name="ROLL" id="roll1"placeholder="Enter student Register no"class="border-0 border-bottom border-dark border-3 "></td>
+                </tr>
+                <tr id="tr1">
+                    <td><label>MARK 1:</label></td>
+                    <td>:<input type="text" name="M1" id="mark1"placeholder="Enter Mark"class="border-0 border-bottom border-dark border-3 "></td>
+                </tr>
+                <tr id="tr1">
+                    <td><label>MARK 2:</label></td>
+                    <td>:<input type="text" name="M2" id="mark2"placeholder="Enter Mark"class="border-0 border-bottom border-dark border-3 "></td>
+                </tr>
+                <tr id="tr1">
+                    <td><label>MARK 3:</label></td>
+                    <td>:<input type="text" name="M3" id="mark3"placeholder="Enter Mark" class="border-0 form-range:focus border-bottom border-dark border-3 "></td>
+                </tr>
+                <tr id="tr1 ">
+                    <td colspan="2"><input type="button" value="SUBMIT" id="sub1" onclick="mark()" class="btn btn-primary btn1">
+                        <input type="reset" value="Clear" class="btn btn-danger"></td>
+                    <td></td>
+                </tr>
+
+            </table>
+        </form>
+    </div>
+    <div class="col-lg-8">
+        <h1>List</h1>
+    <table id="mytable" class="border border-dark rounded-5 trs">
+        <tr class="bg-primary">
+            <th >Name</th>
+            <th >Roll No</th>
+            <th >Mark1</th>
+            <th >Mark2</th>
+            <th >Mark3</th>
+            <th >Total</th>
+            <th >Average</th>
+            <th >Result</th>
+            <th >grade</th>
+        </tr>
+        <tr >
+            <td id="name11" ></td>
+            <td id="roll11"></td>
+            <td id="mark11"></td>
+            <td id="mark22"></td>
+            <td id="mark33"></td>
+            <td id="total"></td>
+            <td id="avg"></td>
+            <td id="res"></td>
+            <td id="grade"></td>
+        </tr>
+    </div>
+    </table>

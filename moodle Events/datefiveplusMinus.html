@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="dateplus.js">
+        function add(){
+   var a=document.getElementById("input1").value;
+   var d=new Date(a);
+   d.setDate(d.getDate()+5);
+   var day=d.getDate();
+   var mon=(d.getMonth()+1);
+   var yr=(d.getFullYear());
+   var full= day + "-" + mon + "-" + yr;
+   document.getElementById("ans1").value=full;
+   d.setDate(d.getDate()-10);
+   var day=d.getDate();
+   var mon=(d.getMonth()+1);
+   var yr=(d.getFullYear());
+   var full= day + "-" + mon + "-" + yr;
+   document.getElementById("ans2").value=full;
+}
+add();
+
+    </script>
+    <label for="">Enter Date</label>
+    <input type="date" id="input1"><br>
+    <input type="button" onclick="add()"value="Click"> <br>
+    <label for="">Addition of 5 days</label>
+    <input type="text" id="ans1"><br>
+    <label for="">subtraction of 5 days</label>
+    <input type="text" id="ans2"><br>
+
+</body>
+</html>

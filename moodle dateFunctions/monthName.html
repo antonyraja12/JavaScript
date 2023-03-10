@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="script.js">
+         function fun(m,y){
+    var mname=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+    var a=new Date(y,m-1);
+    var s=a.getMonth();
+    var arr= mname[s];
+    console.log(arr);
+    console.log(y);
+}
+fun(5,2002);
+fun(12,1973);
+    </script>
+    
+</body>
+</html>

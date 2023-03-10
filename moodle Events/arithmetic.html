@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmetic functions</title>
+
+</head>
+<body>
+    <script>
+        function add(){
+    var a=parseInt(document.getElementById("f1").value);
+    var b=parseInt(document.getElementById("f2").value);
+    var c=a+b;
+    document.getElementById("ans").innerHTML="Addition"+c;
+}
+function sub(){
+    var a=parseInt(document.getElementById("f1").value);
+    var b=parseInt(document.getElementById("f2").value);
+    var c=a-b;
+    document.getElementById("ans").innerHTML="Subtraction: "+c;
+    
+}
+function mul(){
+    var a=parseInt(document.getElementById("f1").value);
+    var b=parseInt(document.getElementById("f2").value);
+    var c=a*b;
+    document.getElementById("ans").innerHTML="Multiplication: "+c;
+}
+function div(){
+    var a=parseInt(document.getElementById("f1").value);
+    var b=parseInt(document.getElementById("f2").value);
+    var c=a/b;
+    document.getElementById("ans").innerHTML="Division: "+c;
+}
+</script>
+    
+    <table>
+        <thead> <th>
+            <h1>Arithmetic Operations </h1>
+            </th></thead>
+        <form >
+            <tr>
+                <td><label>Enter First value</label></td>
+                <td><input type="text" id="f1"></td>
+            </tr>
+            <tr>
+                <td><label for="">Enter Second value</label></td>
+                <td><input type="text" id="f2"></td>
+            </tr>
+            <tr>
+            <td> 
+             <input type="button" name="addd" id="add1"value="ADD" onclick="add()">
+             <input type="button" name="subb" id="sub1"value="SUBTERACT" onclick="sub()">
+             <input type="button" name="mull" id="mul1"value="MULTIPLY" onclick="mul()">
+             <input type="button" name="divv" id="div1"value="DIVIDE"onclick="div()">
+            </td>
+             </tr>
+                         
+                <tr>
+                    <td> 
+                        
+                        <h1 id="ans"></h1>
+                    
+                    </td>
+                </tr>
+
+
+        </form>
+    </table>
+    
+</body>
+</html>

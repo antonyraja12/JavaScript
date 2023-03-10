@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="cartindom.js">
+        var a=()=>{
+        var s=document.getElementById("uinput").value;
+        var data='<h1>ADD TO CART</h1>';
+        var b=title.innerHTML=data;
+        var row=tabledata.insertRow(0);
+        cell1=row.insertCell(0);
+        cell1.innerHTML=s;
+    }
+    </script>
+    <div id="cart1">
+        <p id="title"></p>
+        <input type="text" name="" id="uinput">
+        <input type="button" value="ADD" onclick="a()">
+
+        <table id="tabledata"></table>
+    </div>
+</body>
+</html>

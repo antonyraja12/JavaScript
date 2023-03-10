@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="regularexp.js">
+        function check(){
+  var c=document.getElementById("name1").value;
+  var  ptn= new RegExp(/^[A-Za-z0-9_]{3,15}$/);
+  
+  if(ptn.test(c))
+  {
+    const as='Your Pattern matched';
+    (document.getElementById('pat').innerHTML = as);
+  
+  }
+  else {
+    document.getElementById('pat').innerHTML = 'pattern not matched';
+  
+  }
+}
+    </script>
+</head>
+<body>
+    <label for="">User Name</label>
+    <input type="text" id="name1" onkeypress="check()"><span id="pat"></span> <span id="pat1"></span> 
+      
+</body>
+</html>

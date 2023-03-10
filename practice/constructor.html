@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class emp
+        {
+            constructor()
+            {
+                this.id=101;
+                this.name="Raja";
+            }
+            
+        }
+        class company extends emp{
+            constructor(com)
+            {
+            super();
+            this.company=com;
+            }
+        }
+        var d="antony";
+        
+        var c=new company("Tcs");
+        document.writeln(c.id+"<br>"+c.name+"<br>"+c.company);
+        document.write(typeof(d));
+    </script>
+    
+</body>
+</html>

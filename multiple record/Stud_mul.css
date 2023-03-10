@@ -1,0 +1,19 @@
+td{
+    width:200px!important;
+    height: 70px!important;
+}
+input{
+ outline: none;
+ background: transparent;
+
+}
+.btn1{
+    margin-left: 150px;
+}
+::placeholder{
+    color: white;
+}
+
+#cls{
+    background-image:linear-gradient(to right ,#97c95d,#5dc96f) ;
+}

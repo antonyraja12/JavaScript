@@ -1,0 +1,15 @@
+.bgimg{
+    /* background-repeat: no-repeat ;
+    background-size: cover; */
+    background-image:conic-gradient(at 50% 20% , rgb(236, 37, 37) ,rgb(100, 10, 100));
+
+}
+input{
+background: transparent; 
+color: white;   
+border: none;
+border-bottom: 2px solid white;
+}
+td{
+height: 60px;
+}
