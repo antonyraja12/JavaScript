@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="jsontable.js"></script>
+    <table>
+        <form action="">
+            <tr>
+                <td><label for="">Emp Name</label></td>
+                <td><input type="text" id="ename" onkeydown="nvalid()">
+                    <span id="span1"></span></td>
+            </tr>
+            <tr>
+                <td><label for="">Emp ID</label></td>
+                <td><input type="text" id="Eno"></td>
+            </tr>
+            <tr>
+                <td><label for="">Designation</label></td>
+                <td><input type="text" id="des"></td>
+            </tr>
+            <tr>
+                <td><label for="">Phone no</label></td>
+                <td><input type="text" id="ph"></td>
+            </tr>
+            <tr>
+                <td><label for="">Basic</label></td>
+                <td><input type="text" id="basic" onchange="c()"></td>
+            </tr>
+            <tr>
+                <td><label for="">HRA</label></td>
+                <td><input type="text" id="hra"></td>
+            </tr>
+            <tr>
+                <td><label for="">DA</label></td>
+                <td><input type="text" id="da"></td>
+            </tr>
+            <tr>
+                <td><label for="">PF</label></td>
+                <td><input type="text" id="pf"></td>
+            </tr>
+            <tr>
+                <td><label for="">Gross Pay</label></td>
+                <td><input type="text" id="gs"></td>
+            </tr>
+            <tr>
+                <td><label for="">Net Pay</label></td>
+                <td><input type="text" id="nt"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="button" id="sub"  value=" submit" onclick="disp()">
+                    <input type="reset" id="">
+                </td>
+                <td></td>
+            </tr>
+        </form>
+    </table>
+    <table id="mytable">
+        <tr><th>E_name</th>
+            <th>E_id</th>
+            <th>Designation</th>
+            <th>Phone no</th>
+            <th>Basic</th>
+            <th>HRA</th>
+            <th>DA</th>
+            <th>PF</th>
+            <th>Gross Pay</th>
+            <th>Net Pay</th>
+            </tr>
+    </table>
+    
+</body>
+</html>

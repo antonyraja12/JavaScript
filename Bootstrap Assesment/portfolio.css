@@ -1,0 +1,25 @@
+li{
+    margin-left:20px ;
+    list-style-type: none;
+}
+.inp{
+    box-sizing: border-box;
+    height: 20px;
+    border-radius: 20px;
+}
+.inp1{
+    box-sizing: border-box;
+    height: 70px;
+    width: 250px;
+    color: rgb(88, 185, 246);
+}
+.ser,.cls{
+    background:linear-gradient(to top, rgba(50, 50, 50, 0.3),black);
+
+    
+}
+.icon{
+
+    color:white;
+    font-size: 100px;
+}
